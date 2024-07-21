@@ -1,18 +1,18 @@
-import React from 'react'
-import DataContextComponents from './utils/DataContextComponent'
-import Card from './components/Card'
+import React, {useState} from 'react'
+import CartCard from './components/CartCard'
+import UserContextComponent from './utils/UserContextComponent'
 
+export const UserContext = React.createContext()
 
 function App() {
-  return (
-    <div className="container">
-      <div className="row">
-        <DataContextComponents>
-          <Card />
-        </DataContextComponents>
+
+  return <>
+    <UserContextComponent>
+      <div className="container my-5">
+        <CartCard/>
       </div>
-    </div>
-  );
+    </UserContextComponent>
+  </>
 }
 
 export default App
