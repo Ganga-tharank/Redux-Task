@@ -1,7 +1,8 @@
-import { configureStore } from "@reduxjs/toolkit";
-import BlogReducer from "./BlogSlice";
+import { configureStore } from '@reduxjs/toolkit'
+import CartSlice from './CartSlice'
+
 export default configureStore({
   reducer: {
-    blogs: BlogReducer,
+    cart :  CartSlice
   },
-});
+})
